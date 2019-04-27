@@ -1,0 +1,9 @@
+#!/bin/sh
+set -eu -o pipefail
+
+sbatch \
+    --job-name=physlr-filter \
+    --partition=all \
+    --mem=368G \
+    --exclusive \
+    ./physlr-bxmx data/f1.indexlr.head1000.physlr.tsv -o ff-cpp -n2 -N10 -C4

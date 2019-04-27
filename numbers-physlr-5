@@ -1,0 +1,14 @@
+#!/bin/bash
+#
+#SBATCH --job-name=physlr5
+#SBATCH --exclusive
+#SBATCH --output=%x_%j.log
+#SBATCH --workdir=/projects/btl/gdilek/physlr/src/log
+
+set -euo pipefail
+
+cd /projects/btl/gdilek/physlr/src
+
+/usr/bin/time -pv -o cppfbfmt.f1chr4.time.t3 ./physlr-filter-bxmx-threaded5 ../data/f1chr4.indexlr.physlr.tsv -n2 -N20 -C10 -t3 > cppfbfmt.f1chr4.t3
+
+touch ${SLURM_JOB_NAME}.done.t3
