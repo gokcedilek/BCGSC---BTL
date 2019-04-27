@@ -18,16 +18,16 @@ I focused on improving the performance (specifically, time and memory usage) of 
 2. I did thorough testing for these stages with various parameters, with various inputs.
 3. I did thorough benchmarking for these stages using various data structures (example: map, set, vector, and different implementations of these data structures) to determine the most viable combination of data structures to use.
 4. I refactored the code (example: combining parts of the code, eliminating some unnecessary steps)  to enhance the efficiency of the stages.
-5. Results for the fly chromosomes (578611152 barcodes to process) and human chromosomes (1047492412 barcodes to process):
-|  fly | Time (min) | Memory (GB)  |  
+5. Improvement results for the fly chromosomes (578611152 barcodes to process) and human chromosomes (1047492412 barcodes to process):
+| fly | Time (min) | Memory (GB) |  
 | --- | --- | --- |
-|  initial version | 110  |  190.155 |
-|  final version |  33 |  146.516 | 
+| initial version | 110 | 190.155 |
+| final version | 33 | 146.516 | 
 
-|  human | Time (min) | Memory (kb)  |  
+| human | Time (min) | Memory (GB) |  
 | --- | --- | --- |
-| initial version | 401  |  422.805 |
-| final version | 90  | 295.633  | 
+| initial version | 401 | 422.805 |
+| final version | 90 | 295.633 | 
 
 
 
