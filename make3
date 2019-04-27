@@ -1,0 +1,4 @@
+make: Entering directory '/projects/btl/gdilek/physlr/data'
+mlr --tsvlite filter '$n >= 100' hg004.indexlr.n100-5000.c2-x.physlr.overlap.tsv >hg004.indexlr.n100-5000.c2-x.physlr.overlap.n100.tsv
+command gtime -v -o hg004.indexlr.n100-5000.c2-x.physlr.overlap.n100.mol.tsv.time env PYTHONPATH=/projects/btl/gdilek/physlr pypy3 /projects/btl/gdilek/physlr/bin/physlr molecules -V2 -t16 --separation-strategy=1 hg004.indexlr.n100-5000.c2-x.physlr.overlap.n100.tsv >hg004.indexlr.n100-5000.c2-x.physlr.overlap.n100.mol.tsv
+make: Leaving directory '/projects/btl/gdilek/physlr/data'
